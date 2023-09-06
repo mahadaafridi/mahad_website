@@ -49,3 +49,31 @@ nav ul li a{
     position: relative;
 }
 
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left:0;
+    bottom: -6px;
+    transition: 0.5s;
+} 
+
+nav ul li a:hover::after{
+    width:100%;
+
+}
+
+.header-text{
+    margin-top: 20%;
+    font-size: 20px;
+}
+.header-text h1 {
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+.header-text h1 span{
+    color: red;
+}
