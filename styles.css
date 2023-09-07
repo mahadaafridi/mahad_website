@@ -11,9 +11,9 @@ body{
 }
 
 #header{
-    width: auto;
+    width: 100%;
     height: auto;
-    /* background-image: url(images/background.jpg); */
+    /* background-image: url(images/mahad.png);  */
     background-size: cover;
     background-position: center;
 
@@ -32,7 +32,7 @@ nav{
 }
 
 .logo{
-    width: 140px;
+    width: 300px;
 
 }
 
@@ -66,14 +66,95 @@ nav ul li a:hover::after{
 }
 
 .header-text{
-    margin-top: 20%;
+    /* margin-top: 20%; */
     font-size: 20px;
 }
 .header-text h1 {
-    margin-top: 20px;
+    /* margin-top: 20px; */
     font-size: 40px;
 }
 
 .header-text h1 span{
     color: red;
+}
+
+
+/* about section */
+
+#about{
+    padding: 80px 0;
+    color: #ababaa;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 40%;
+}
+
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.about-col-2{
+    flex-basis: 55%;
+}
+
+.sub-title{
+    font-size: 30px;
+    font-weight: 600;
+    color: red;
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 20px;
+}
+
+.tab-links{
+    margin-right: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: red;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+
+}
+
+.tab-contents ul li span{
+    color: red;
+    font-size: 14px;
+    
+}
+
+.tab-contents{
+    display: none;
+
+}
+
+.tab-contents.active-tab{
+    display:block;
 }
