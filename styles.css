@@ -166,21 +166,40 @@ nav ul li a:hover::after{
 
 }
 
-.work-list {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center; 
-}
-
 .work-list > div {
-    flex: 1; 
-    padding: 5px;
-   
-    text-align: left;
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+    background-color: #f0f0f0; /* Set the default background color */
+    margin: 10px; /* Add some spacing between the sections */
 }
 
-.work-list p{
-    font-size: 12px;
+/* Define different background colors for each section */
+.work-list > div:nth-child(1) {
+    background-color: #ffcc00; /* Example color for the first section */
 }
+
+.work-list > div:nth-child(2) {
+    background-color: #ff6666; /* Example color for the second section */
+}
+
+.work-list > div:nth-child(3) {
+    background-color: #66ccff; /* Example color for the third section */
+}
+
+.work-list a {
+    text-decoration: none;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 1px 1px;
+    border-radius: 3px;
+}
+
+.work-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
 
 
